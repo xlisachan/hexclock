@@ -1,5 +1,8 @@
-# hexclock
-Background color of page changes according to the current time, which is displayed in hex code format.
+# <a href="https://xlisachan.github.io/hexclock/">hexclock</a>
+* Created a page that displays a background color according to the current time in hex code format
 
 # Built With
-HTML, CSS, JavaScript
+JavaScript, HTML, CSS
+
+#Deployment
+<a href="https://xlisachan.github.io/hexclock/">https://xlisachan.github.io/hexclock</a>
