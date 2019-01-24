@@ -4,5 +4,5 @@
 # Built With
 JavaScript, HTML, CSS
 
-#Deployment
+# Deployment
 <a href="https://xlisachan.github.io/javascript_hexclock/">https://xlisachan.github.io/javascript_hexclock/</a>
