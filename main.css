@@ -1,13 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
-
-body{
-    color: lightgray;
-    font-family: 'Quicksand', sans-serif;
+body {
+  font-family: 'Lato', sans-serif;
 }
 
-#container{
+div {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 700px;
+  height: 100vh;
 }
