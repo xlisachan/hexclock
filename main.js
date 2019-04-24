@@ -11,7 +11,7 @@ let clock = () => {
     let clock = document.getElementById('clock');
     clock.innerHTML = `#${h}:${m}:${s}`;
     document.body.style.backgroundColor = `#${h}${m}${s}`;
-    document.body.style.color = ((h + m + s) < 127 * 3) ? 'white' : 'black';
+    document.body.style.color = ((h + m + s) > (127 * 3)) ? 'white' : 'black';
     
     setTimeout('clock()', 500);
 }
