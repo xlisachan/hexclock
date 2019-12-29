@@ -12,6 +12,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: blue;
+}
+
 section {
   width: 60%;
   height: 15vh;
