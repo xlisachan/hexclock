@@ -9,11 +9,17 @@ let clock = () => {
     if (s < 10) s = "0" + s;
 
     // set time
-    let clock = document.getElementById('clock');
-    clock.innerHTML = `#${h}:${m}:${s}`;
+    let hr = document.getElementById('hr')
+        min = document.getElementById('min')
+        sec = document.getElementById('sec');
+
+    hr.innerHTML = `${h}`;
+    min.innerHTML = `${m}`;
+    sec.innerHTML = `${s}`;
 
     // set background color
-    document.body.style.backgroundColor = `#${h}${m}${s}`;
+    let panel = document.getElementById('panel');
+    panel.style.backgroundColor = `#${h}${m}${s}`;
     
     // determine and set font color by converting hex to rgb
     let hex = `${h}${m}${s}`
@@ -22,11 +28,10 @@ let clock = () => {
         g = (rgb >> 8) & 255
         b = rgb & 255;
 
-    document.body.style.color = ((r + g + b) < (127 * 3)) ? 'white' : 'black';
+    panel.style.color = ((r + g + b) < (127 * 3)) ? 'white' : 'black';
 
     setTimeout('clock()', 500);
 }
-
 
 window.addEventListener('load', () => {
     clock();
