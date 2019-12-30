@@ -18,8 +18,11 @@ let clock = () => {
     sec.innerHTML = `${s}`;
 
     // set background color
-    let panel = document.getElementById('panel');
+    let panel = document.getElementById('panel')
+        backPanel = document.getElementById('panel-back');
+
     panel.style.backgroundColor = `#${h}${m}${s}`;
+    backPanel.style.backgroundColor = `#${h}${m}${s}`;
     
     // determine and set font color by converting hex to rgb
     let hex = `${h}${m}${s}`
@@ -31,8 +34,24 @@ let clock = () => {
     panel.style.color = ((r + g + b) < (127 * 3)) ? 'white' : 'black';
 
     setTimeout('clock()', 500);
-}
+};
 
 window.addEventListener('load', () => {
     clock();
-})
+});
+
+// event listener - flip panels
+let panelClicked = false
+    backButton = document.getElementById('back-button')
+    infoButton = document.getElementById('info-button')
+    innerPanel = document.getElementById('panel-inner');
+
+infoButton.addEventListener('click', () => {
+    panelClicked = true;
+    innerPanel.style.transform = 'rotateY(180deg)';
+});
+
+backButton.addEventListener('click', () => {
+    panelClicked = false;
+    innerPanel.style.transform = 'rotateY(0deg)';
+});

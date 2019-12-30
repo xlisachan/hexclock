@@ -12,14 +12,33 @@
     </head>
     <body>
         <main>
-            <section id="panel">
-                <div class="hexclock">
-                    #
-                    <span id="hr" class="digit"></span>
-                    :
-                    <span id="min" class="digit"></span>
-                    :
-                    <span id="sec" class="digit"></span>
+            <section id="panel" class="panel">
+                <div id="panel-inner" class="panel-inner">
+                    <div class="panel-front">
+                        <div id="info-button" class="btn info-btn">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+
+                        <div class="hexclock">
+                            #
+                            <span id="hr" class="digit"></span>
+                            :
+                            <span id="min" class="digit"></span>
+                            :
+                            <span id="sec" class="digit"></span>
+                        </div>
+                    </div>
+    
+                    <div id="panel-back" class="panel-back">
+                        <div id="back-button" class="btn">
+                            <i class="fas fa-arrow-left"></i>
+                        </div>
+
+                        <div class="info">
+                            <h1>Hexclock</h1>
+                            <p>A color-changing clock that displays the current time and hexadecimal color.</p>
+                        </div>
+                    </div>
                 </div>
             </section>
         
